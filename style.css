@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+
+header {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: rgb(97, 7, 109);
+}
+
+.header__nav  {
+    
+    display: flex;  
+
+}
+.header__nav-ul  {
+    font-size: 18px;
+    color:rgb(241, 231, 249);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.header__nav-ul-li {
+    list-style: none;
+    margin-right: 4rem;
+    padding: 6px;
+    font-family: 'BhuTuka Expanded One','sans-serif', cursive;
+
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(243, 240, 244);
+    text-decoration:underline;
+    padding-bottom: 5px;
+    font-size: 32px;
+    font-family: 'BhuTuka Expanded One','sans-serif', cursive;
+}
+
+.container__receta {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.container__receta h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.container__receta p {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.container__img {
+    width: 200px;
+    height: 200px;
+
+
+
+}
+
+
+.footer {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(142, 142, 142);
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: azure;
+    font-weight: bolder;
+    font-size: 18px;
+    
+}
+
+
