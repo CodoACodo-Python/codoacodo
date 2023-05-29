@@ -460,6 +460,38 @@ header nav a:hover{
 
 /* Estilos de Página Servicios */
 
+.box_inicio {
+    text-align: center;
+  }
+      h2 {
+    text-transform: uppercase; 
+  }
+  p {
+line-height: 1.5; 
+  }
+  .servicio {
+padding: 500px 20px 10px; 
+display: flex;
+margin-top: 40vh;
+align-content: center;
+align-items: center;
+margin-bottom: 30px;
+flex-flow: column wrap;
+
+}
+
+.servicio_ini {
+    align-items: center;
+    
+
+}
+
+.servicio_ini li {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
 .box__content__service {
     display: flex;
     width: 100%;
