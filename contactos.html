@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/Image/favicon.png" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik+Iso&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+    <title>Recetas Grupo 4</title>
+</head>
+<body>
+    <header>
+        <div class="header__content">
+          <div class="header__content-logo">
+            <a href="./index.html"><img class="header__content-logo-img" src="./image/pastas.webp" alt="Ristorante"></a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__content-menu">
+                <li><a class="header__content-option" href="./index.html">Inicio</a></li>
+                <li><a class="header__content-option" href="#">Nosotros</a></li>
+                <li><a class="header__content-option" href="./servicios.html">Servicios</a></li>
+                <li><a class="header__content-option" href="./contactos.html">Contactanos</a></li>
+              </ul>
+          </nav> 
+        </div>
+      </header>
+    <main class="contenedor">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./image/ristorante.jpg" class="d-block w-100" alt="ristorante">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./image//ristorante2.jpg" class="d-block w-100" alt="ristorante-salon">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      <article class="box__container-title-contact">
+        <h2>Contactanos</h2>
+          <h3>Nos gustan tus mensajes, envíanos uno ahora!</h3>
+      </article>
+      <div class="box__contenedor">
+      <section class="box__container-contact">
+        <div class="box__container-sub">
+          <h4>Escribenos!</h4>
+        </div>
+        <div class="box__form">  
+          <form  class="form" action="send.php" method="get" enctype="multipart/form-data">
+            <label class="box__form-title" for="name">Escriba su nombre*</label>
+            <input class="box__form-input" type="text" placeholder="Ej: Juan Perez" id="name">
+            <label class="box__form-title" for="mail">Escriba su correo*</label>
+            <input class="box__form-input" type="text" placeholder="Ej:info@gadbizz.com" id="mail">
+            <label class="box__form-title" for="phone">Número de teléfono</label>
+            <input class="box__form-input" type="text" placeholder="Ej:11-3333-1111" id="phone">
+            <label class="box__form-title" for="subject">Asunto*:</label>
+            <input class="box__form-input" type="text" placeholder="Ej: Información de consultoria" id="subject">
+            <label class="box__form-title" for="men">Mensaje*</label>
+            <textarea  class="box__form-area" name="menssage" id="men" cols="20" rows="8" placeholder=""></textarea>
+          </form>
+            <div class="box__btn">
+            <button class="box__boton-send" type="submit">Enviar</button>
+            <button class="box__boton-clean" type="reset">Limpiar</button>    
+          </div> 
+        </div>
+      </section>
+      <section>
+        <div class=box__container-contact-seg>
+          <article class="box__cont-article">
+            <img class="box__container-img" src="./image//globo.png" alt="direccion">
+            <h3 class="box__company">Compañia</h3>
+            <p class="box__contact_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>
+        </article>
+        <article class="box__cont-article">
+          <img class="box__container-img" src="./image//llamada-telefonica.png" class="box__company">Teléfono</h3>
+          <p class="box__contact_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>
+        </article>
+        <article class="box__cont-article">
+          <img class="box__container-img" src="./image//sms.png" alt="correo">
+          <h3 class="box__company">Email</h3>
+          <p class="box__contact_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>
+        </article>
+        </div>
+      </section>
+    </div> 
+      <section class="box__location">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.414045270489!2d-58.38310045184507!3d-34.607865574665695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335320d9ea4c5%3A0x2cb41df4e2abe065!2sGoogle!5e0!3m2!1ses-419!2sar!4v1659834018129!5m2!1ses-419!2sar" width="2000px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>     
+    </main>
+    <!-- Pie de página -->
+    <footer class="footer">
+      <p class="footer__text">Copyriht 2022 - Recetas &nbsp; | &nbsp;All Rights Reserved | &nbsp;
+        <a href="#">Privacy policy</a>
+      </p>          
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+</body>
+</html>

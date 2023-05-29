@@ -13,12 +13,21 @@ header {
     margin: 0;
     padding: 0;
     font-size: 14px;
-    background-color: rgb(97, 7, 109);
+    background-image: radial-gradient(circle, #55b4de, #2496d2, #0078c3, #0058b0, #223797);
 }
 
 .header__nav  {
     
-    display: flex;  
+    height: 100px;
+    flex:5px;
+    padding-left: 20px; 
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-style: italic;
+
 
 }
 .header__nav-ul  {
@@ -30,24 +39,32 @@ header {
     margin: 20px;
 }
 
-.header__nav-ul-li {
-    list-style: none;
-    margin-right: 4rem;
-    padding: 6px;
-    font-family: 'BhuTuka Expanded One','sans-serif', cursive;
+.header__content-logo {
+    display:flex;
+}
+
+.header__content-logo-img {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 35px;
+    padding: 0.5px;
+    margin: 20px;
+    left: 30px;
+    width: 80px;
 
 }
 
-.header__title {
+
+.header__content-menu {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(243, 240, 244);
-    text-decoration:underline;
-    padding-bottom: 5px;
-    font-size: 32px;
-    font-family: 'BhuTuka Expanded One','sans-serif', cursive;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex: 5 1 auto;
+   
+}
+.header__content-option {
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
 }
 
 .container__receta {
@@ -77,20 +94,470 @@ header {
 }
 
 
-.footer {
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    background-color: rgb(142, 142, 142);
-    width: 100%;
-    padding: 20px;
-    justify-content: center;
+
+
+/* Estilo de contactanos */
+.contenedor {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    
+}
+
+.box__contenedor {
+    display: flex;
+    width: 100%;
+    margin-top: 15vh;
+    margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box__container-title-contact {
+    background-color: #000000;
+    background-image: url(../assets/Image/call-center.jpg);
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: inline-block;
+    position: relative;
+
+}
+
+.box__container-title-contact h2 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 40px;
+    align-self: center;
+    color: white;
+}
+
+.box__container-title-contact h3 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(248, 248, 248);
+    font-size: 15px;
+    align-self: center;
+}
+
+.box__container-contact {
+
+    background-color: rgba(235, 235, 248, 0.758);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 800px;
+    border-radius: 15px;
+    margin: 0 50px;
+    border: 0px solid black;    
+
+}
+
+
+.box__container-sub {
+    color: black;
+    font-size: 30px;
     text-align: center;
-    color: azure;
-    font-weight: bolder;
-    font-size: 18px;
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+    width: 60%;
+}
+
+.box__form{
+    height: 80%;
+    text-align: left;
+    color: black;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    width: 100%;
+    
+ }
+
+.box__form-input{
+    color: black;
+    height:40px;
+    padding-left: 5px;
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    border-bottom: 10px solid black;
+    border: 1px;
+    border-radius: 4px;
+    box-shadow: 0px;
+    background-color:white;
+    margin: 1px 10px 10px 0;
+
+}
+
+
+
+.box__form-title {
+    width: 40%;
+    text-align: left;
+    font-size: 15px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 3px;
+
+}
+
+.box__form-area {
+    color: black;
+    padding: 5px;
+    width: 100%;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    border-bottom: 10px solid black;
+    border: 1px;
+    border-radius: 4px;
+    background-color:white;
+    margin: 15px 10px 20px 0;
+
+}
+.box__btn{
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.box__boton-send {
+    width: 20%;
+    height: 50px;
+    background-color: rgba(7, 7, 48, 0.9);
+    color: white;
+    border: 3px solid white;
+    margin-left: 0;
+    font-weight: bold;
+    font-style: oblique; 
+    border-radius: 3px;  
+
+}
+
+.box__boton-clean {
+    width: 20%;
+    height: 50px;
+    background-color: rgba(244, 216, 38, 0.893);
+    margin-left: 0;
+    font-weight: bold;
+    font-style: oblique; 
+    border-radius: 3px;
+
+}
+
+.box__container-contact-seg {
+    background-color: rgb(6, 6, 68);
+    height: 800px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 50px;
+   
+
+}
+.box__cont-article {
+     display: flex;
+     padding: 20px;
+     flex-flow:row wrap;
+     justify-content: space-between;
+     align-items: flex-start;
+     margin: 0;
+}
+
+.box__container-img {
+    background-color: white;
+    position: relative;
+    top: 15vh;
+    width: 60px;
+    height: 60px;
+    left: 10vh;
+    margin-left: 90px;
+    margin-right: 50px;
+
+}
+
+.box__company {
+    width: 0;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 10vh;
+    left: 15vh;
+    
+}
+.box__contact_des {
+    width: 70%;
+    position: relative;
+    top: 10vh;
+    color: white;
+    margin: 50px 50px 50px 30px;
+    padding-right: 40px;    
+
+}
+
+.box__location {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+.box__location h2 {
+
+    font-size: 60px;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 60%;
+    text-align: center;
+    align-self: center;
+    border-bottom: 5px solid black;
+    margin: 40px;
+    padding: 15px;
+}
+
+.box__location-ubi {
+    width: 100%;
+    flex-direction: row;
+
     
 }
 
 
+/* Estilos de Página Servicios */
+
+.box__content__service {
+    display: flex;
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.box__content__service-head {
+    background-image: url(../assets/Image/bussinesman.jpg);
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: inline-block;
+    position:relative;
+}
+
+.box__content__service-head h2 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 60px;
+
+}
+
+.box__content__service-head h3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    padding: 5px;
+}
+.box__content__service-title {
+    font-size: 50px;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.box__content__service-articles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 50px;
+}
+.box__content__service-article {
+    background-color: rgba(55, 0, 255, 0.83);
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 18px;
+    box-shadow: 0 25px 50px -12px rgb(0, 0, 6);
+    margin: 100px;
+}
+
+.box__boton-presu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 40px;
+    width: 600px;
+    background-color: rgb(10, 77, 245);
+    color: white;
+    font-size: 33px;
+    text-align: center;
+}
+/* Planes  */
+.box__content__plans{
+    display: flex;
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.box__content__plan-head {
+    background-image: url(../assets/Image/geometric.jpg);
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: inline-block;
+    position:relative;
+}
+
+.box__content__plan-head h2 {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__content__plan-head h3 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box__content__plan-title h4 {
+    font-size: 45px;
+    margin: 30px;
+    text-align: center;
+    
+}
+
+.box__content__plan-title p {
+    font-size: 25;
+    font-style: normal;
+    font-weight: bold;
+    margin: 25px;
+    text-align: center;
+}
+
+.box__content__plan-articles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 50px;
+    
+}
+
+.box__content__plan-article {
+    width: 400px;
+    height: 800px;
+    border: 1px solid black;
+    margin: 50px;
+    padding: 30px;
+    background-color:#2513D1;
+    color:white;
+    border-radius: 10px;
+
+}
+.box__content__plan-article h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+
+}
+
+.box__content__plan-price {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.box__content__plan-price h2 {
+    font-size: 55px;
+    padding-left: 5px;
+}
+
+.box__content__plan-price h4 {
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.box__content__plan-price-li {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+    list-style-type: disc;
+
+}
+
+.box__btn-plan {
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 260px;
+    background-color: white;
+    border-radius: 15px;
+    align-self: center;
+    margin-top: 70px;
+    margin-left: 40px;
+
+}
+
+
+/* Estilo de pie de página */
+ /* Pie de página */
+ .footer {
+    background-color: rgba(3, 3, 49, 0.763);
+    margin: 30px 0 10px 0;
+    padding: 20px;
+    width: 100%;
+ 
+  }
+  .footer__text {
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      font-family: 'Open Sans', sans-serif;
+  }
+
+  .footer__text a {
+      text-decoration: none;
+      font-size: 15px;
+      color:rgb(255, 255, 255);
+      display: flex;
+      flex-flow: row nowrap;
+      font-family: 'Open Sans', sans-serif;
+     
+  } 
