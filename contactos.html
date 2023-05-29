@@ -18,26 +18,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"  rel="stylesheet">
+<link rel="stylesheet" href="@sweetalert2/theme-bulma/bulma.css">
 <link rel="stylesheet" href="./style.css">
     <title>Recetas Grupo 4</title>
 </head>
 <body>
     <header>
-        <div class="header__content">
-          <div class="header__content-logo">
-            <a href="./index.html"><img class="header__content-logo-img" src="./image/pastas.webp" alt="Ristorante"></a>
-          </div>
-          <nav class="header__nav">
-            <ul class="header__content-menu">
-                <li><a class="header__content-option" href="./index.html">Inicio</a></li>
-                <li><a class="header__content-option" href="#">Nosotros</a></li>
-                <li><a class="header__content-option" href="./servicios.html">Servicios</a></li>
-                <li><a class="header__content-option" href="./contactos.html">Contactanos</a></li>
-              </ul>
-          </nav> 
+      <div class="logo">
+        <h1>EL GAUCHO </h1>
+        <h3>RESTAURANT</h3>
+    </div>
+    <nav>
+      <a href="./index.html" class="selected">Inicio</a>
+      <a href="./nostros.html">Nosotros</a>
+      <a href="./servicios.html">Servicios</a>
+      <a href="./contactos.html">Contacto</a>
+  </nav>
         </div>
       </header>
-    <main class="contenedor">
+    <main>
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
@@ -56,17 +57,13 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-      <article class="box__container-title-contact">
-        <h2>Contactanos</h2>
-          <h3>Nos gustan tus mensajes, envíanos uno ahora!</h3>
-      </article>
       <div class="box__contenedor">
       <section class="box__container-contact">
         <div class="box__container-sub">
           <h4>Escribenos!</h4>
         </div>
         <div class="box__form">  
-          <form  class="form" action="send.php" method="get" enctype="multipart/form-data">
+          <form  class="form"  enctype="multipart/form-data">
             <label class="box__form-title" for="name">Escriba su nombre*</label>
             <input class="box__form-input" type="text" placeholder="Ej: Juan Perez" id="name">
             <label class="box__form-title" for="mail">Escriba su correo*</label>
@@ -79,7 +76,7 @@
             <textarea  class="box__form-area" name="menssage" id="men" cols="20" rows="8" placeholder=""></textarea>
           </form>
             <div class="box__btn">
-            <button class="box__boton-send" type="submit">Enviar</button>
+            <button class="box__boton-send" type="submit" id="enviar">Enviar</button>
             <button class="box__boton-clean" type="reset">Limpiar</button>    
           </div> 
         </div>
@@ -92,7 +89,7 @@
             <p class="box__contact_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>
         </article>
         <article class="box__cont-article">
-          <img class="box__container-img" src="./image//llamada-telefonica.png" class="box__company">Teléfono</h3>
+          <img class="box__container-img" src="./image//llamada-telefonica.png" alt="telefono"><h3 class="box__company">Teléfono</h3>
           <p class="box__contact_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique expedita perferendis quo ab veniam inventore impedit voluptatum? Eius repudiandae soluta illo adipisci error itaque minus voluptates amet deleniti quis!</p>
         </article>
         <article class="box__cont-article">
@@ -110,10 +107,17 @@
     </main>
     <!-- Pie de página -->
     <footer class="footer">
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    </div> 
       <p class="footer__text">Copyriht 2022 - Recetas &nbsp; | &nbsp;All Rights Reserved | &nbsp;
         <a href="#">Privacy policy</a>
-      </p>          
+      </p>         
     </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+  <script src="./main.js"></script>
 </body>
 </html>

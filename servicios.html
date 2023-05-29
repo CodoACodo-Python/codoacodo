@@ -1,76 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../assets/Image/favicon.png" type="image/x-icon"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik+Iso&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css">
-    <title>Recetas Grupo 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Restaurant</title>
 </head>
 <body>
-<div class="container">
     <header>
-        <div class="header__content">
-          <div class="header__content-logo">
-            <a href="./index.html"><img class="header__content-logo-img" src="./image/pastas.webp" alt="Ristorante"></a>
-          </div>
-          <nav class="header__nav">
-            <ul class="header__content-menu">
-              <li><a class="header__content-option" href="./index.html">Inicio</a></li>
-              <li><a class="header__content-option" href="#">Nosotros</a></li>
-              <li><a class="header__content-option" href="./servicios.html">Servicios</a></li>
-              <li><a class="header__content-option" href="./contactos.html">Contactanos</a></li>
-            </ul>
-          </nav> 
+        <div class="logo">
+            <h1>EL GAUCHO </h1>
+            <h3>RESTAURANT</h3>
         </div>
-      </header>
+        <nav>
+            <a href="./index.html" class="selected">Inicio</a>
+            <a href="./nostros.html">Nosotros</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./contactos.html">Contacto</a>
+        </nav>
+    </header>
 
 
-  <section id="inicio">
+  <section class="box_inicio">
     <h2>Bienvenido al Servicios de "La receta de Risotto"</h2>
     <p>¡Deliciosas comidas in site o entregadas directamente en tu puerta!</p>
     <p>Realiza tu pedido fácilmente y disfruta de una amplia variedad de opciones gastronómicas.</p>
   </section>
+  <div>
+  <h2>Menú</h2>
+  <section class="box_menu">
+    <div class="box_menu_pastas">
+      <h4>Sorretinos</h4>
+      <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno </p>
+      <img  class="box_menu_pastas_img" src="./image/sorrentinos.jpg">
+    </div>
+    <div class="box_menu_pastas">
+      <h4>Sorretinos</h4>
+      <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno </p>
+      <img  class="box_menu_pastas_img" src="./image/saltibocaromana.jpg">
+    </div>
+    <div class="box_menu_pastas">
+      <h4>Sorretinos</h4>
+      <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno </p>
+      <img  class="box_menu_pastas_img" src="./image/berenjena.jpg">
+    </div>
 
-  <section id="menu">
-    <h2>Menú</h2>
-    <ul>
-      <li>Plato 1</li>
-      <li>Plato 2</li>
-      <li>Plato 3</li>
-      <!-- Acá podemos agragar los platos que querramos, yo sólo puse genericos -->
-    </ul>
   </section>
+</div>
 
-  <section id="servicios">
+  <section class="servicio">
     <h2>Servicios</h2>
     <ul>
       <li>Opción 1: Reservar carta y Mesa desde casa</li>
       <li>Opción 2: Pedi tu Menu, y te lo llevamos en delivery</li>
       <li>Opción 3: Reserva tu Menu y pasa a buscar</li>
-    </ul>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Para realizar un pedido o para cualquier consulta, contáctanos:</p>
-    <ul>
-      <li>Teléfono: 1123901246</li>
-      <li>Correo electrónico: risotto@tucomida.com</li>
-      <li>Dirección: Av. Tres Fronteras 252, Puerto Iguazú, Misiones, Argentina</li>
     </ul>
   </section>
   <footer class="footer">
