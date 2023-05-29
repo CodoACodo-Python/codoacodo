@@ -1,15 +1,22 @@
 const inputname = document.querySelector('#name');
 const inputmail = document.querySelector('#mail');
 const inputsubject = document.querySelector('#subject');
-const inputmensaje = document.querySelector('#men')
-const btnEnviar = document.querySelector('enviar')
+const inputmensaje = document.querySelector('#men');
+const inputphone = document.querySelector('#phone')
+const btnEnviar = document.querySelector('#enviar')
 const btnlimpiar = document.querySelector('clean')
 
+
+
 const Formulario = ()=> {
-    inputname.value,
-    inputmail.value,
-    inputsubject.value,
-    inputmensaje.value
+
+    console.log('click');
+    const inputname = document.querySelector('#name').value
+    const inputmail = document.querySelector('#mail').value
+    const inputsubject = document.querySelector('#subject').value
+/*     const inputmensaje = document.querySelector('#men').value
+    const inputphone = document.querySelector('#phone').value
+ */
     if(inputname==="" || inputmail ==="" || inputsubject===""){
         Swal.fire({
             icon: 'error',
@@ -20,7 +27,11 @@ const Formulario = ()=> {
             confirmButtonText:'Aceptar',
            
           })
-    }else {
+
+        }else {
+            console.log('listo');
+        }
+  /*   }else {
         const spinner = document.querySelector('#spinner');
        
         spinner.classList.add('activo');
@@ -30,7 +41,7 @@ const Formulario = ()=> {
             spinner.classList.add('inactivo');
             formulario.reset();
         },3000)
-    }
+    } */
 }
 
 btnEnviar.addEventListener('click', Formulario)
