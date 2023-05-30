@@ -227,6 +227,7 @@ header nav a:hover{
     
 }
 
+
 .box__contenedor {
     display: flex;
     width: 100%;
@@ -237,6 +238,14 @@ header nav a:hover{
     align-items: center;
 }
 
+.box_carousel {
+    height: 30%;
+}
+
+.box_carousel-img {
+
+    height: 600px;
+}
 .box__container-title-contact {
     background-color: #000000;
     background-image: url(../assets/Image/call-center.jpg);
@@ -690,8 +699,15 @@ flex-flow: column wrap;
 estilos de nosotros */
 .mision{
     color:rgb(31, 31, 92);background:rgb(201, 131, 39);
-    text-align: center;
     font-style: italic;
+    margin: 2rem 8rem;
+    padding: 30px;
+}
+
+.mision h1 {
+    text-align: center;
+    align-items: center;
+    align-content: center;
 }
 .parrafo{
 
@@ -702,6 +718,9 @@ estilos de nosotros */
 .somos{
 font-size: x-large;
 text-align: center;
+margin: 20px;
+padding: 10px;
+
 }
 /* 
 sección menu */
@@ -785,6 +804,8 @@ sección menu */
       font-family: 'Open Sans', sans-serif;
      
   } 
+
+
 
   /* media queries */
 

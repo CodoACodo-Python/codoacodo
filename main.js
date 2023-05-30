@@ -10,14 +10,14 @@ const btnlimpiar = document.querySelector('clean')
 
 const Formulario = ()=> {
 
-    console.log('click');
+
     const inputname = document.querySelector('#name').value
     const inputmail = document.querySelector('#mail').value
     const inputsubject = document.querySelector('#subject').value
-/*     const inputmensaje = document.querySelector('#men').value
+    const inputmensaje = document.querySelector('#men').value
     const inputphone = document.querySelector('#phone').value
- */
-    if(inputname==="" || inputmail ==="" || inputsubject===""){
+
+    if(inputname==="" || inputmail ==="" || inputsubject==="" || inputmensaje===""){
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -28,20 +28,15 @@ const Formulario = ()=> {
            
           })
 
-        }else {
-            console.log('listo');
-        }
-  /*   }else {
-        const spinner = document.querySelector('#spinner');
-       
-        spinner.classList.add('activo');
-        spinner.classList.remove('inactivo');
-        setTimeout (() => {
-            spinner.classList.remove('activo');
-            spinner.classList.add('inactivo');
-            formulario.reset();
-        },3000)
-    } */
+    }else {
+        Toastify({
+            text: "Mensaje enviado correctamente!",
+            className: "info",
+            style: {
+              background: "linear-gradient(to right, #053714, #229730)",
+            }
+          }).showToast();
+          console.log('listo');
+    }
 }
-
 btnEnviar.addEventListener('click', Formulario)
