@@ -20,7 +20,9 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"  rel="stylesheet">
+<link rel="stylesheet" href="sweetalert2.min.css">
 <link rel="stylesheet" href="@sweetalert2/theme-bulma/bulma.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 <link rel="stylesheet" href="./style.css">
     <title>Recetas Grupo 4</title>
 </head>
@@ -39,13 +41,14 @@
         </div>
       </header>
     <main>
+      <div class="box_carousel">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
-                <img src="./image/ristorante.jpg" class="d-block w-100" alt="ristorante">
+                <img src="./image/ristorante.jpg" class="d-block w-100 box_carousel-img" alt="ristorante">
               </div>
               <div class="carousel-item" data-bs-interval="2000">
-                <img src="./image//ristorante2.jpg" class="d-block w-100" alt="ristorante-salon">
+                <img src="./image//ristorante2.jpg" class="d-block w-100 box_carousel-img" alt="ristorante-salon">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -57,6 +60,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        </div>
       <div class="box__contenedor">
       <section class="box__container-contact">
         <div class="box__container-sub">
@@ -80,6 +84,7 @@
             <button class="box__boton-clean" type="reset">Limpiar</button>    
           </div> 
         </div>
+        
       </section>
       <section>
         <div class=box__container-contact-seg>
@@ -118,6 +123,8 @@
       </p>         
     </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="./main.js"></script>
 </body>
 </html>
