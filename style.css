@@ -229,13 +229,12 @@ header nav a:hover{
 
 
 .box__contenedor {
-    display: flex;
-    width: 100%;
-    margin-top: 15vh;
-    margin-bottom: 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        justify-content: space-between;
+        width: 100%;
 }
 
 .box_carousel {
@@ -286,6 +285,7 @@ header nav a:hover{
     border-radius: 15px;
     margin: 0 50px;
     border: 0px solid black;    
+    width: 600px;
 
 }
 
@@ -369,76 +369,62 @@ header nav a:hover{
     align-items: center;
 }
 .box__boton-send {
-    width: 20%;
-    height: 50px;
-    background-color: rgba(7, 7, 48, 0.9);
-    color: white;
-    border: 3px solid white;
-    margin-left: 0;
-    font-weight: bold;
-    font-style: oblique; 
-    border-radius: 3px;  
+   margin: 20px;
 
 }
 
-.box__boton-clean {
-    width: 20%;
-    height: 50px;
-    background-color: rgba(244, 216, 38, 0.893);
-    margin-left: 0;
-    font-weight: bold;
-    font-style: oblique; 
-    border-radius: 3px;
-
-}
 
 .box__container-contact-seg {
-    background-color: rgb(6, 6, 68);
+    width: 90%;
+    margin: 15px;
+    background-color: #060644;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr, 2px);
+    border-radius: 10px;
     height: 800px;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 50px;
-   
 
 }
 .box__cont-article {
-     display: flex;
-     padding: 20px;
-     flex-flow:row wrap;
-     justify-content: space-between;
-     align-items: flex-start;
-     margin: 0;
+    display: grid;
+    grid-template-areas:
+        "img titulo"
+        "img contenido";
+
 }
 
 .box__container-img {
+    grid-area: img;
+    gap: 20px;
     background-color: white;
-    position: relative;
-    top: 15vh;
     width: 60px;
     height: 60px;
-    left: 10vh;
+    margin-top: 85px;
     margin-left: 90px;
-    margin-right: 50px;
+    margin-right: 10px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 13px;
+
 
 }
 
 .box__company {
-    width: 0;
+    grid: titulo;
+    gap: 30px;
     color: white;
     font-size: 20px;
-    position: relative;
-    top: 10vh;
-    left: 15vh;
+    margin-top: 70px;
+    margin-left: 20px;
+
     
 }
 .box__contact_des {
-    width: 70%;
-    position: relative;
-    top: 10vh;
+
+    grid: contenido;
+    width: 100%;
     color: white;
-    margin: 50px 50px 50px 30px;
-    padding-right: 40px;    
+    margin: 20px;
+    padding-right: 10px;
 
 }
 

@@ -8,8 +8,8 @@ const btnlimpiar = document.querySelector('clean')
 
 
 
-const Formulario = ()=> {
-
+const Formulario = (e)=> {
+    e.preventDefault();
 
     const inputname = document.querySelector('#name').value
     const inputmail = document.querySelector('#mail').value
